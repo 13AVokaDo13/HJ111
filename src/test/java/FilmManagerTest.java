@@ -71,10 +71,11 @@ public class FilmManagerTest {
         manager.addNew("Episode IX");
 
 
-        String[] expected = {"Episode IX","Episode VIII","Episode VII","Episode VI", "Episode V", "Episode IV","Rogue One", "Episode III", "Episode II", "Episode I"};
+        String[] expected = {"Episode IX", "Episode VIII", "Episode VII", "Episode VI", "Episode V", "Episode IV", "Rogue One", "Episode III", "Episode II", "Episode I"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testLastMoreTen() {
         FilmManager manager = new FilmManager();
@@ -91,7 +92,7 @@ public class FilmManagerTest {
         manager.addNew("Episode IX");
 
 
-        String[] expected = {"Episode IX","Episode VIII","Episode VII","Episode VI", "Episode V", "Episode IV","Solo","Rogue One", "Episode III", "Episode II"};
+        String[] expected = {"Episode IX", "Episode VIII", "Episode VII", "Episode VI", "Episode V", "Episode IV", "Solo", "Rogue One", "Episode III", "Episode II"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
